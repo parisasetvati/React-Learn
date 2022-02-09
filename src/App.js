@@ -15,7 +15,9 @@ import UseRefExample from './Components/Ref/UseRefExample';
 import CounterReduce from './Components/Reduce/CounterReduce'
 import CounterProvider from './Components/Context/CounterProvider';
 import CounterOne from './Components/Context/CounterOne';
-
+import MultipleReducer from './Components/Reduce/MultipleReducer';
+import CounterProvidercr from './Components/Context+Reducer/CounterProvidercr';
+import CounterOnecr from './Components/Context+Reducer/CounterOnecr';
 class App extends React.Component {
     constructor(props){
         super(props)
@@ -96,11 +98,16 @@ this.setState({products});
         // console.log(this.props);
         return (
         <>
+        <CounterProvidercr>
+            <h2>wellcom to context+reducer</h2>
+            <CounterOnecr/>
+        </CounterProvidercr>
             {/* <button onClick={()=>this.setState({isShow:!this.state.isShow})} >
                {this.state.isShow ? 'hide': 'show'}
             </button>
             {this.state.isShow && <FunctionalTimer/>} */}
-            <CounterReduce/>
+            {/* <CounterReduce/>
+            <MultipleReducer/> */}
                
                {/* <CounterProvider>
                    <p>wellcome to context</p>
