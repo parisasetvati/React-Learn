@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.counter{
+    background-color: #e9d5ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color:#9333ea;
+    display: flex;
+   font-size: 15px;
+   font-weight: bold;
+    justify-content: center;
+    align-items: center;
+margin-left: 10px;
+
+}
+/* #a855f7 */
